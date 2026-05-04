@@ -25,7 +25,7 @@ jobs:
       - name: Build project
         run: npm run build
       
-      - name: Test - check UNINASSAU in index.astro
+      - name: Test - check UNINASSAU in index.html
         run: grep -q "UNINASSAU" src/pages/index.html && echo "ok" || (echo "UNINASSAU not found in index.astro" && exit 1)
 
     #   - name: Deploy to Cloudflare Pages
